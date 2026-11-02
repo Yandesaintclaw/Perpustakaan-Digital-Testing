@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loan Register - DigiLib</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = { theme: { extend: { colors: { navy: '#0f172a', slate: '#334155', offwhite: '#f8fafc', teal: '#0d9488', teal_light: '#14b8a6' }, fontFamily: { sans: ['Inter', 'sans-serif'], } } } }
+    </script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body class="bg-offwhite text-slate font-sans h-screen flex overflow-hidden">
+    <aside class="w-64 bg-navy text-white flex flex-col h-full shadow-xl z-20">
+        <div class="p-6 flex items-center gap-3 border-b border-slate">
+            <div class="w-8 h-8 bg-teal rounded-lg flex items-center justify-center font-bold text-white">DL</div>
+            <h1 class="text-xl font-bold tracking-wide">DigiLib</h1>
+        </div>
+        <nav class="flex-1 p-4 space-y-2">
+            <p class="text-xs text-gray-400 font-semibold uppercase tracking-wider mb-4 mt-2 px-2">Koleksi Digital</p>
+            <a href="novels.html" class="flex items-center gap-3 px-3 py-2.5 rounded-lg hover:bg-slate transition group text-white">
+                <svg class="w-5 h-5 text-teal group-hover:text-teal_light" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13m0-13C10.832 5.477 9.246 5 7.5 5S4.168 5.477 3 6.253v13C4.168 18.477 5.754 18 7.5 18s3.332.477 4.5 1.253m0-13C13.168 5.477 14.754 5 16.5 5c1.747 0 3.332.477 4.5 1.253v13C19.832 18.477 18.247 18 16.5 18c-1.746 0-3.332.477-4.5 1.253"></path></svg>
+                <span class="font-medium text-sm">Novels</span>
+            </a>
+            <a href="education.html" class="flex items-center gap-3 px-3 py-2.5 rounded-lg hover:bg-slate transition group text-white">
+                <svg class="w-5 h-5 text-teal group-hover:text-teal_light" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 14l9-5-9-5-9 5 9 5z M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z"></path></svg>
+                <span class="font-medium text-sm">Education</span>
+            </a>
+            <a href="history.html" class="flex items-center gap-3 px-3 py-2.5 rounded-lg hover:bg-slate transition group text-white">
+                <svg class="w-5 h-5 text-teal group-hover:text-teal_light" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path></svg>
+                <span class="font-medium text-sm">History</span>
+            </a>
+            <a href="short-stories.html" class="flex items-center gap-3 px-3 py-2.5 rounded-lg hover:bg-slate transition group text-white">
+                <svg class="w-5 h-5 text-teal group-hover:text-teal_light" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path></svg>
+                <span class="font-medium text-sm">Short Stories</span>
+            </a>
+            <!-- Aktif -->
+            <a href="loan-register.html" class="flex items-center gap-3 px-3 py-2.5 bg-teal/10 text-teal rounded-lg border border-teal/20 transition">
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5H7a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2V7a2 2 0 00-2-2h-2M9 5a2 2 0 002 2h2a2 2 0 002-2M9 5a2 2 0 012-2h2a2 2 0 012 2"></path></svg>
+                <span class="font-medium text-sm">Loan Register</span>
+            </a>
+        </nav>
+    </aside>
+    <main class="flex-1 flex flex-col h-full bg-offwhite">
+        <header class="bg-white h-16 border-b border-gray-200 flex items-center justify-between px-6 shrink-0 z-10 shadow-sm">
+            <div class="flex items-center text-sm font-medium text-gray-400 gap-2"><span class="text-teal">Menu: Loan Register</span></div>
+            <div class="flex items-center gap-3"><div class="text-right hidden md:block"><div class="text-sm font-bold text-navy">Budi Santoso</div></div><div class="w-9 h-9 bg-teal rounded-full text-white flex items-center justify-center font-bold">BS</div></div>
+        </header>
+        <div class="flex-1 overflow-y-auto p-6 md:p-8">
+            <div class="mb-8"><h2 class="text-2xl font-bold text-navy">Daftar Peminjaman Aktif</h2><p class="text-sm text-gray-500 mt-1">Pantau buku yang sedang Anda pinjam dan tenggat waktunya.</p></div>
+            <div class="bg-white rounded-xl shadow-sm border border-gray-200 overflow-hidden">
+                <table class="w-full text-left border-collapse">
+                    <thead>
+                        <tr class="bg-gray-50 border-b border-gray-200 text-sm text-gray-500 font-semibold uppercase tracking-wide">
+                            <th class="py-4 px-6">Judul Buku</th>
+                            <th class="py-4 px-6">Kategori</th>
+                            <th class="py-4 px-6">Tanggal Pinjam</th>
+                            <th class="py-4 px-6">Batas Waktu</th>
+                            <th class="py-4 px-6">Status</th>
+                        </tr>
+                    </thead>
+                    <tbody class="divide-y divide-gray-100">
+                        <tr class="hover:bg-gray-50 transition text-sm text-slate">
+                            <td class="py-4 px-6 font-medium">Mastering C# & .NET</td>
+                            <td class="py-4 px-6">Education</td>
+                            <td class="py-4 px-6">10 Nov 2026</td>
+                            <td class="py-4 px-6 font-medium text-navy">17 Nov 2026</td>
+                            <td class="py-4 px-6"><span class="bg-yellow-100 text-yellow-700 px-3 py-1 rounded-full text-xs font-bold">Dipinjam</span></td>
+                        </tr>
+                        <tr class="hover:bg-gray-50 transition text-sm text-slate">
+                            <td class="py-4 px-6 font-medium">Bumi Manusia</td>
+                            <td class="py-4 px-6">Novels</td>
+                            <td class="py-4 px-6">01 Nov 2026</td>
+                            <td class="py-4 px-6 font-medium text-red-500">08 Nov 2026</td>
+                            <td class="py-4 px-6"><span class="bg-red-100 text-red-600 px-3 py-1 rounded-full text-xs font-bold">Terlambat</span></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
